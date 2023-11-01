@@ -1,0 +1,14 @@
+textarea {
+  color: $black;
+  border: 1px solid $black;
+  background-color: $lightest_gray;
+  resize: none;
+  width: 100%;
+  padding: 11px;
+  box-sizing: border-box;
+  
+  ::placeholder {
+    color: $dark_gray;
+    font-style: italic;
+  }
+}

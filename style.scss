@@ -1,0 +1,14 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,400;0,700;1,400&display=swap');
+
+// BASIC STYLES
+@import "./scss/basic/_variables.scss";
+@import "./scss/basic/basic";
+
+// COMPONENTS
+@import "./scss/components/header/_header.scss";
+@import "./scss/components/button/button";
+@import "./scss/components/textarea/textarea";
+
+// PAGES
+@import "./scss/pages/homepage/hompage";

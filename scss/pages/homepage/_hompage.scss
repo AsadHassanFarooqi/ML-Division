@@ -1,0 +1,145 @@
+.main-section {
+  
+  h1 {
+    text-align: center;
+  }
+
+  .content-wrapper {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+
+    .left-sidebar {
+      width: 60%;
+      height: 100%;
+
+      img {
+        height: 100%;
+        width: -webkit-fill-available;
+        max-width: 100%;
+      }
+    }
+
+    .right-sidebar {
+      width: 40%;
+      height: 100%;
+      padding: 28px;
+      position: relative;
+
+      .button-wrapper {
+        display: flex;
+        align-items: center;
+        margin: 33px 0 25px;
+        justify-content: center;
+    
+        .or-text {
+          margin: 0 15px;
+        }
+      }
+  
+      h2 {
+        text-align: center;
+      }
+  
+      form {
+        margin: 14px 0 20px;
+  
+        .blue-btn {
+          margin: 20px auto 25px;
+        }
+      }
+  
+      .audio-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .action-btn, .label {
+    img {
+      margin-right: 9px;
+    }
+
+  }
+
+  .label {
+    padding: 8px 15px;
+    background-color: $light_gray;
+    color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 14px;
+    width: 194px;
+    cursor: pointer;
+
+    input[type="file"] {
+      position: absolute;
+      top: -1000px;
+    }
+
+    .text {
+      color: $black;
+    }
+  } 
+}
+
+.modal-wraper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 99;
+
+  &.show {
+    display: flex;
+  }
+
+  .modal-content {
+    width: 600px;
+    background-color: $white;
+    height: 400px;
+    border-radius: 12px;
+    padding: 30px 15px;
+    position: relative;
+
+    h2 {
+      text-align: center;
+    }
+
+    .close-icon {
+      position: absolute;
+      right: 15px;
+      top: 25px;
+      min-width: auto;
+      border-radius: 50%;
+      padding: 0;
+      height: 40px;
+      width: 40px;
+    }
+
+    .display, .controllers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 15px 0;
+    }
+
+    .message {
+      color: $red;
+    }
+
+    .controllers {
+      margin: 20px 0;
+    }
+  }
+}
