@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     uploadedFile.addEventListener("change", function () {
-        const blob = fileInput.files[0];
+        const blob = uploadedFile.files[0];
         audioURL = window.URL.createObjectURL(blob);
     });
 
