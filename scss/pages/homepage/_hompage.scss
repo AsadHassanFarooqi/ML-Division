@@ -112,6 +112,14 @@
     padding: 30px 15px;
     position: relative;
 
+    #text {
+      color: $red;
+    }
+
+    #info {
+      color: $dark_blue;
+    }
+
     h2 {
       text-align: center;
     }
@@ -131,6 +139,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-direction: column;
       margin: 15px 0;
     }
 
@@ -140,6 +149,10 @@
 
     .controllers {
       margin: 20px 0;
+    }
+
+    .hidden {
+      display: none;
     }
   }
 }

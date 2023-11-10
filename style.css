@@ -210,6 +210,12 @@ textarea ::placeholder {
   padding: 30px 15px;
   position: relative;
 }
+.modal-wraper .modal-content #text {
+  color: #b03333;
+}
+.modal-wraper .modal-content #info {
+  color: #7EA8E7;
+}
 .modal-wraper .modal-content h2 {
   text-align: center;
 }
@@ -227,6 +233,7 @@ textarea ::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 15px 0;
 }
 .modal-wraper .modal-content .message {
@@ -234,4 +241,7 @@ textarea ::placeholder {
 }
 .modal-wraper .modal-content .controllers {
   margin: 20px 0;
+}
+.modal-wraper .modal-content .hidden {
+  display: none;
 }/*# sourceMappingURL=style.css.map */

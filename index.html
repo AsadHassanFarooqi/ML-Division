@@ -27,18 +27,18 @@
           </button>
           <p class="or-text">OR</p>
           <label class="label action-btn">
-            <input type="file" accept="audio/*" required/>
+            <input type="file" accept="audio/*" id="uploaded-file" required/>
             <img src="./images/upload-icon.svg" alt="upload icon" />
             upload wav file
           </label>
         </div>
         <h2>Enter Text Prompt</h2>
         <form>
-          <textarea rows="8" class="textarea" placeholder="Enter the text here which you want the AI to speak in the voice of your choice"></textarea>
-          <button type="submit" class="blue-btn">GENERATE</button>
+          <textarea rows="8" class="textarea" id="text-area" placeholder="Enter the text here which you want the AI to speak in the voice of your choice"></textarea>
+          <button type="button" class="blue-btn" id="generate-btn">GENERATE</button>
         </form>
         <div class="audio-wrapper">
-          <audio controls class="audio" id="audio">
+          <audio controls class="output-audio" id="audio">
             <source src="" type="audio/mp3">
             Your browser does not support the audio element.
           </audio>
@@ -46,16 +46,27 @@
       </div>
     </div>
   </section>
+
+
   <div class="modal-wraper" id="modal">
     <div class="modal-content">
       <h2>Record your voice:</h2>
       <button type="button" class="close-icon" id="close-icon">x</button>
-      <div class="display"></div>
-      <div class="controllers"></div>
+      <div class="display">
+        <h1 class="hidden" id="text">Recording</h1>
+        <audio controls class="hidden" id="modal-audio">
+          <source src="" type="audio/mp3">
+          Your browser does not support the audio element.
+        </audio>
+        <p class="hidden" id="info">Once you have recorded your voice then you can close this modal the audio is stored on our side...</p>
+      </div>
+      <div class="controllers">
+        <button type="button" id="start-recording">Start Recording</button>
+        <button type="button" id="stop-recording" class="hidden">Stop Recording</button>
+      </div>
     </div>
   </div>
 
-  <script src="./script.js" type="text/javascript"></script>
-  <script src="./recoder.js" type="text/javascript"></script>
+  <script src="./js/script.js" type="text/javascript"></script>
 </body>
 </html>
